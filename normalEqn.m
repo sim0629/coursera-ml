@@ -8,7 +8,7 @@ function [theta] = normalEqn(X, y)
 %               to linear regression and put the result in theta.
 %
 
-theta = inv(X' * X) * X' * y;
+theta = pinv(X) * y;
 
 % ============================================================
 
